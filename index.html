@@ -6,9 +6,11 @@
     <meta name="Author" content="Jean van Kasteel">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+  
   <body>
     <div id="header">
       <h1>Fantasy Map Generator</h1>
+
       <div id="sources">
         <a href="https://github.com/vankasteelj/fantasymapgenerator" target="_blank">Source code on Github</a>
       </div>
@@ -16,7 +18,14 @@
 
     <div id="content">
       <table id="map"></table>
+
+      <div id="loader">
+        <div class="loader"></div>
+      </div>
+      
+      <button id="generate" onclick="generate()">Generate</button>
     </div>
   </body>
+
   <script src="js/map.js"></script>
 </html>
